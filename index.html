@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="all">
+    <h1 class="hd">Student Marks Calculation System </h1>
+    <input class="input"  type="number" id="firstNumber" placeholder="Enter your number"><br></b>
+    <input  class="input" type="number" id="secondNumber" placeholder="Enter your obtain number"><br><br>
+    <button class="input" onclick="ali()">Click Here</button>
+    <h2 class="hd" id="result"> Your result is here </h2>
+
+
+    <script>
+        function ali(){
+        let totalNumber = document.getElementById("firstNumber").value;
+        let obtainNumber = document.getElementById("secondNumber").value;
+
+        result = (obtainNumber*100) /totalNumber;
+
+        document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
